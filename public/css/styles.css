@@ -1,0 +1,100 @@
+.bodyContainer{
+    min-height: 70vh;
+}
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+
+.footer-padding {
+	padding-bottom: 60px;
+}
+
+.footer {
+	position: relative;
+	text-align: center;
+	/* bottom: 0; */
+	width: 100%;
+	background-color: #1abc9c;
+    bottom: 0;
+    min-height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
+	font-size: 12px;
+  color: #fff;
+  text-align: center;
+}
+
+
+/* compose page style start */
+#composeMainDiv form{
+    display: flex;
+    flex-direction: column;
+}
+
+#composeMainDiv input, label, button, textarea{
+    outline: none;
+    margin: 4px 0px;
+}
+
+#composeMainDiv input, button, textarea{
+    border: 1px solid black;
+    padding: 4px 5px;
+    border-radius: 4px;
+}
+#composeMainDiv button{
+    background-color: rgb(47, 47, 248);
+    color: white;
+    border: none;
+}
+#composeMainDiv label{
+    cursor: pointer;
+}
+/* compose page style end */
+
+
+/* home page style start */
+.postDiv{
+    padding: 8px 10px ;
+    margin: 3px 0px;
+    background-color: rgb(247, 241, 241);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+/* home page style end */
+
+/* separate post pages design start */
+.separatePost h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.separatePost p{
+    font-size: 20px;
+    line-height: 3rem;
+    font-stretch: extra-expanded;
+    text-align: justify;
+    letter-spacing: 3px;
+}
+
+
+/* separate post pages design end */

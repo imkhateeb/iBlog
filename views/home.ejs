@@ -1,0 +1,17 @@
+<%- include("partials/header") -%>
+
+<div class="homeStartingContent">
+    <h1>Home</h1>
+    <p><%= startingContent %></p>
+</div>
+
+
+<% for ( let i = 0; i < postArray.length; i++ ){ %>
+    <div class="postDiv">
+        <% let str100 = postArray[i].content.slice(0, 100) + "..." %>
+        <h2><%= postArray[i].title %></h2>
+        <p><%= str100 %><a href="/posts/<%= postArray[i].title %>">Read more...</a></p>
+    </div>
+<% } %>
+
+<%- include("partials/footer") -%>

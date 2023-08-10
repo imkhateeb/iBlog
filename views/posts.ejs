@@ -1,0 +1,12 @@
+<%- include("partials/header") -%>
+
+<% posts.forEach((post)=>{ %>
+    <% let str100 = post.content.slice(0, 100) + "..." %>
+    <div class="postDiv">
+        <h1><%= post.title %></h1>
+        <p><%= str100 %> <a href="/posts/<%= post._id %>">Read more...</a></p>
+        <form action="/delete" method="POST"><button type="submit" name="deleteID" value=<%= post._id %> > Delete </button></form>
+    </div>
+<% }) %>
+
+<%- include("partials/footer") -%>
